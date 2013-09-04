@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4085368D17CFD3FF00B3A4DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4085368C17CFD3FF00B3A4DB /* UIKit.framework */; };
+		4085368F17CFD3FF00B3A4DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4085368E17CFD3FF00B3A4DB /* Foundation.framework */; };
+		4085369117CFD3FF00B3A4DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4085369017CFD3FF00B3A4DB /* CoreGraphics.framework */; };
+		4085369717CFD3FF00B3A4DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4085369517CFD3FF00B3A4DB /* InfoPlist.strings */; };
+		4085369917CFD3FF00B3A4DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085369817CFD3FF00B3A4DB /* main.m */; };
+		4085369D17CFD3FF00B3A4DB /* WIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085369C17CFD3FF00B3A4DB /* WIAppDelegate.m */; };
+		408536A017CFD3FF00B3A4DB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4085369E17CFD3FF00B3A4DB /* MainStoryboard.storyboard */; };
+		408536A317CFD3FF00B3A4DB /* WIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 408536A217CFD3FF00B3A4DB /* WIViewController.m */; };
+		408536AA17CFD7FE00B3A4DB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408536A917CFD7FE00B3A4DB /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4085368817CFD3FF00B3A4DB /* WeatherInformer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherInformer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4085368C17CFD3FF00B3A4DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4085368E17CFD3FF00B3A4DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4085369017CFD3FF00B3A4DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4085369417CFD3FF00B3A4DB /* WeatherInformer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeatherInformer-Info.plist"; sourceTree = "<group>"; };
+		4085369617CFD3FF00B3A4DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4085369817CFD3FF00B3A4DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4085369A17CFD3FF00B3A4DB /* WeatherInformer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeatherInformer-Prefix.pch"; sourceTree = "<group>"; };
+		4085369B17CFD3FF00B3A4DB /* WIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WIAppDelegate.h; sourceTree = "<group>"; };
+		4085369C17CFD3FF00B3A4DB /* WIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WIAppDelegate.m; sourceTree = "<group>"; };
+		4085369F17CFD3FF00B3A4DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		408536A117CFD3FF00B3A4DB /* WIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WIViewController.h; sourceTree = "<group>"; };
+		408536A217CFD3FF00B3A4DB /* WIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WIViewController.m; sourceTree = "<group>"; };
+		408536A917CFD7FE00B3A4DB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4085368517CFD3FF00B3A4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408536AA17CFD7FE00B3A4DB /* CoreLocation.framework in Frameworks */,
+				4085368D17CFD3FF00B3A4DB /* UIKit.framework in Frameworks */,
+				4085368F17CFD3FF00B3A4DB /* Foundation.framework in Frameworks */,
+				4085369117CFD3FF00B3A4DB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4085367D17CFD3FF00B3A4DB = {
+			isa = PBXGroup;
+			children = (
+				408536A917CFD7FE00B3A4DB /* CoreLocation.framework */,
+				4085369217CFD3FF00B3A4DB /* WeatherInformer */,
+				4085368B17CFD3FF00B3A4DB /* Frameworks */,
+				4085368917CFD3FF00B3A4DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4085368917CFD3FF00B3A4DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4085368817CFD3FF00B3A4DB /* WeatherInformer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4085368B17CFD3FF00B3A4DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4085368C17CFD3FF00B3A4DB /* UIKit.framework */,
+				4085368E17CFD3FF00B3A4DB /* Foundation.framework */,
+				4085369017CFD3FF00B3A4DB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4085369217CFD3FF00B3A4DB /* WeatherInformer */ = {
+			isa = PBXGroup;
+			children = (
+				4085369B17CFD3FF00B3A4DB /* WIAppDelegate.h */,
+				4085369C17CFD3FF00B3A4DB /* WIAppDelegate.m */,
+				4085369E17CFD3FF00B3A4DB /* MainStoryboard.storyboard */,
+				408536A117CFD3FF00B3A4DB /* WIViewController.h */,
+				408536A217CFD3FF00B3A4DB /* WIViewController.m */,
+				4085369317CFD3FF00B3A4DB /* Supporting Files */,
+			);
+			path = WeatherInformer;
+			sourceTree = "<group>";
+		};
+		4085369317CFD3FF00B3A4DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4085369417CFD3FF00B3A4DB /* WeatherInformer-Info.plist */,
+				4085369517CFD3FF00B3A4DB /* InfoPlist.strings */,
+				4085369817CFD3FF00B3A4DB /* main.m */,
+				4085369A17CFD3FF00B3A4DB /* WeatherInformer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4085368717CFD3FF00B3A4DB /* WeatherInformer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 408536A617CFD3FF00B3A4DB /* Build configuration list for PBXNativeTarget "WeatherInformer" */;
+			buildPhases = (
+				4085368417CFD3FF00B3A4DB /* Sources */,
+				4085368517CFD3FF00B3A4DB /* Frameworks */,
+				4085368617CFD3FF00B3A4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatherInformer;
+			productName = WeatherInformer;
+			productReference = 4085368817CFD3FF00B3A4DB /* WeatherInformer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4085367F17CFD3FF00B3A4DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 4085368217CFD3FF00B3A4DB /* Build configuration list for PBXProject "WeatherInformer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4085367D17CFD3FF00B3A4DB;
+			productRefGroup = 4085368917CFD3FF00B3A4DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4085368717CFD3FF00B3A4DB /* WeatherInformer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4085368617CFD3FF00B3A4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4085369717CFD3FF00B3A4DB /* InfoPlist.strings in Resources */,
+				408536A017CFD3FF00B3A4DB /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4085368417CFD3FF00B3A4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4085369917CFD3FF00B3A4DB /* main.m in Sources */,
+				4085369D17CFD3FF00B3A4DB /* WIAppDelegate.m in Sources */,
+				408536A317CFD3FF00B3A4DB /* WIViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4085369517CFD3FF00B3A4DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4085369617CFD3FF00B3A4DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4085369E17CFD3FF00B3A4DB /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4085369F17CFD3FF00B3A4DB /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		408536A417CFD3FF00B3A4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		408536A517CFD3FF00B3A4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		408536A717CFD3FF00B3A4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherInformer/WeatherInformer-Prefix.pch";
+				INFOPLIST_FILE = "WeatherInformer/WeatherInformer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		408536A817CFD3FF00B3A4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherInformer/WeatherInformer-Prefix.pch";
+				INFOPLIST_FILE = "WeatherInformer/WeatherInformer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4085368217CFD3FF00B3A4DB /* Build configuration list for PBXProject "WeatherInformer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408536A417CFD3FF00B3A4DB /* Debug */,
+				408536A517CFD3FF00B3A4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		408536A617CFD3FF00B3A4DB /* Build configuration list for PBXNativeTarget "WeatherInformer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408536A717CFD3FF00B3A4DB /* Debug */,
+				408536A817CFD3FF00B3A4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4085367F17CFD3FF00B3A4DB /* Project object */;
+}
