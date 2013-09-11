@@ -16,6 +16,9 @@
 		408536A017CFD3FF00B3A4DB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4085369E17CFD3FF00B3A4DB /* MainStoryboard.storyboard */; };
 		408536A317CFD3FF00B3A4DB /* WIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 408536A217CFD3FF00B3A4DB /* WIViewController.m */; };
 		408536AA17CFD7FE00B3A4DB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408536A917CFD7FE00B3A4DB /* CoreLocation.framework */; };
+		B42606C817DF506900F2F0DE /* MapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B42606C717DF506900F2F0DE /* MapLocation.m */; };
+		B42606CA17DF536900F2F0DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42606C917DF536900F2F0DE /* MapKit.framework */; };
+		B45A353C17E0882500ABA337 /* geolocation.png in Resources */ = {isa = PBXBuildFile; fileRef = B45A353B17E0882500ABA337 /* geolocation.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,10 @@
 		408536A117CFD3FF00B3A4DB /* WIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WIViewController.h; sourceTree = "<group>"; };
 		408536A217CFD3FF00B3A4DB /* WIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WIViewController.m; sourceTree = "<group>"; };
 		408536A917CFD7FE00B3A4DB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B42606C617DF506900F2F0DE /* MapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocation.h; sourceTree = "<group>"; };
+		B42606C717DF506900F2F0DE /* MapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocation.m; sourceTree = "<group>"; };
+		B42606C917DF536900F2F0DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B45A353B17E0882500ABA337 /* geolocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = geolocation.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42606CA17DF536900F2F0DE /* MapKit.framework in Frameworks */,
 				408536AA17CFD7FE00B3A4DB /* CoreLocation.framework in Frameworks */,
 				4085368D17CFD3FF00B3A4DB /* UIKit.framework in Frameworks */,
 				4085368F17CFD3FF00B3A4DB /* Foundation.framework in Frameworks */,
@@ -53,7 +61,6 @@
 		4085367D17CFD3FF00B3A4DB = {
 			isa = PBXGroup;
 			children = (
-				408536A917CFD7FE00B3A4DB /* CoreLocation.framework */,
 				4085369217CFD3FF00B3A4DB /* WeatherInformer */,
 				4085368B17CFD3FF00B3A4DB /* Frameworks */,
 				4085368917CFD3FF00B3A4DB /* Products */,
@@ -71,6 +78,8 @@
 		4085368B17CFD3FF00B3A4DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B42606C917DF536900F2F0DE /* MapKit.framework */,
+				408536A917CFD7FE00B3A4DB /* CoreLocation.framework */,
 				4085368C17CFD3FF00B3A4DB /* UIKit.framework */,
 				4085368E17CFD3FF00B3A4DB /* Foundation.framework */,
 				4085369017CFD3FF00B3A4DB /* CoreGraphics.framework */,
@@ -81,11 +90,14 @@
 		4085369217CFD3FF00B3A4DB /* WeatherInformer */ = {
 			isa = PBXGroup;
 			children = (
+				B45A353B17E0882500ABA337 /* geolocation.png */,
 				4085369B17CFD3FF00B3A4DB /* WIAppDelegate.h */,
 				4085369C17CFD3FF00B3A4DB /* WIAppDelegate.m */,
 				4085369E17CFD3FF00B3A4DB /* MainStoryboard.storyboard */,
 				408536A117CFD3FF00B3A4DB /* WIViewController.h */,
 				408536A217CFD3FF00B3A4DB /* WIViewController.m */,
+				B42606C617DF506900F2F0DE /* MapLocation.h */,
+				B42606C717DF506900F2F0DE /* MapLocation.m */,
 				4085369317CFD3FF00B3A4DB /* Supporting Files */,
 			);
 			path = WeatherInformer;
@@ -128,7 +140,7 @@
 		4085367F17CFD3FF00B3A4DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = 4085368217CFD3FF00B3A4DB /* Build configuration list for PBXProject "WeatherInformer" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -154,6 +166,7 @@
 			files = (
 				4085369717CFD3FF00B3A4DB /* InfoPlist.strings in Resources */,
 				408536A017CFD3FF00B3A4DB /* MainStoryboard.storyboard in Resources */,
+				B45A353C17E0882500ABA337 /* geolocation.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +180,7 @@
 				4085369917CFD3FF00B3A4DB /* main.m in Sources */,
 				4085369D17CFD3FF00B3A4DB /* WIAppDelegate.m in Sources */,
 				408536A317CFD3FF00B3A4DB /* WIViewController.m in Sources */,
+				B42606C817DF506900F2F0DE /* MapLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +212,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -211,6 +229,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
@@ -224,12 +243,17 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -280,6 +304,7 @@
 				408536A817CFD3FF00B3A4DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

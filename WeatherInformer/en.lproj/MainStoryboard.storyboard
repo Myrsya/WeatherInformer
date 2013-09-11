@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10J4139" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
     <dependencies>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
         <scene sceneID="4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="WIViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5">
+                    <view key="view" contentMode="scaleToFill" id="5" customClass="UIControl">
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jml-9N-czF">
-                                <rect key="frame" x="449" y="81" width="126" height="44"/>
+                                <rect key="frame" x="449" y="20" width="126" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="tintColor" red="0.001811909813" green="0.29763233420000001" blue="0.0065635575850000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="GO!">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0018119098128460027" green="0.29763233418367352" blue="0.0065635575846484141" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -29,152 +29,573 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Широта:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="CXS-C5-DHw">
-                                <rect key="frame" x="83" y="175" width="86" height="21"/>
+                                <rect key="frame" x="217" y="86" width="86" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Долгота:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="XkG-eN-0cN">
-                                <rect key="frame" x="381" y="175" width="82" height="21"/>
+                                <rect key="frame" x="632" y="86" width="82" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="широта" minimumFontSize="17" clearButtonMode="always" id="Cmk-jc-ggk">
-                                <rect key="frame" x="177" y="170" width="120" height="31"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="широта" minimumFontSize="17" clearButtonMode="whileEditing" id="Cmk-jc-ggk">
+                                <rect key="frame" x="311" y="81" width="120" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="долгота" minimumFontSize="17" clearButtonMode="always" id="lep-JV-gFd">
-                                <rect key="frame" x="471" y="170" width="120" height="31"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="долгота" minimumFontSize="17" clearButtonMode="whileEditing" id="lep-JV-gFd">
+                                <rect key="frame" x="722" y="81" width="120" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Город:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="flD-yb-kZw">
-                                <rect key="frame" x="26" y="240" width="143" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Tvf-W5-5oK">
+                                <rect key="frame" x="20" y="78" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                                <state key="normal" title="Geo" image="geolocation.png">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="geoPressed:" destination="2" eventType="touchUpInside" id="laV-sE-CbU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Прогноз на 10 дней:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r28-5M-BOd">
+                                <rect key="frame" x="20" y="451" width="969" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.001811909813" green="0.29763233420000001" blue="0.0065635575850000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="0zD-n6-q0g">
-                                <rect key="frame" x="177" y="240" width="414" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Текущий прогноз:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gJL-Mj-aDQ">
+                                <rect key="frame" x="20" y="133" width="969" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.001811909813" green="0.29763233420000001" blue="0.0065635575850000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Температура:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="pI9-aY-Sdz">
-                                <rect key="frame" x="26" y="340" width="143" height="21"/>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" id="s46-s9-hFI">
+                                <rect key="frame" x="0.0" y="154" width="591" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="nrd-Ux-6N4">
-                                <rect key="frame" x="177" y="340" width="125" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="dCy-dL-WaK">
+                                        <rect key="frame" x="281" y="135" width="400" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="bIS-Po-gdT">
+                                        <rect key="frame" x="281" y="255" width="159" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Давление:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="Igt-IH-7bF">
+                                        <rect key="frame" x="187" y="255" width="87" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Погода:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="klp-3Y-cIr">
+                                        <rect key="frame" x="187" y="135" width="90" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Дата:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="EcP-uT-Baa">
+                                        <rect key="frame" x="185" y="89" width="90" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="BPl-FS-1gn">
+                                        <rect key="frame" x="279" y="89" width="400" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Влажность:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="tTa-06-2gB">
+                                        <rect key="frame" x="176" y="195" width="97" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Город:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="flD-yb-kZw">
+                                        <rect key="frame" x="185" y="49" width="90" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ветер:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="JHy-bf-fqO">
+                                        <rect key="frame" x="218" y="225" width="55" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="RfT-1z-wP2">
+                                        <rect key="frame" x="281" y="195" width="125" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="nrd-Ux-6N4">
+                                        <rect key="frame" x="281" y="165" width="125" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="0zD-n6-q0g">
+                                        <rect key="frame" x="281" y="49" width="400" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="YXz-hZ-Lve">
+                                        <rect key="frame" x="281" y="225" width="125" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Температура:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="pI9-aY-Sdz">
+                                        <rect key="frame" x="130" y="165" width="143" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="m1G-v3-mA5">
+                                        <rect key="frame" x="57" y="20" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="apy-CL-SVg">
+                                <rect key="frame" x="5" y="475" width="1004" height="258"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Погода:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="klp-3Y-cIr">
-                                <rect key="frame" x="26" y="290" width="143" height="21"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="DTg-w2-4T0">
+                                        <rect key="frame" x="520" y="68" width="64" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="BuC-Hk-Tif">
+                                        <rect key="frame" x="120" y="68" width="64" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" id="XAp-RT-fgS">
+                                        <rect key="frame" x="20" y="20" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" id="nVl-9u-y9C">
+                                        <rect key="frame" x="120" y="20" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" adjustsFontSizeToFit="NO" id="Wfo-sB-T8N">
+                                        <rect key="frame" x="320" y="198" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="OVG-nF-DpS">
+                                        <rect key="frame" x="120" y="140" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="hAI-94-dHu">
+                                        <rect key="frame" x="420" y="68" width="64" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" id="Mbt-oa-R8u">
+                                        <rect key="frame" x="520" y="20" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" adjustsFontSizeToFit="NO" id="yB1-eb-1es">
+                                        <rect key="frame" x="620" y="198" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" adjustsFontSizeToFit="NO" id="H9B-rw-BfF">
+                                        <rect key="frame" x="720" y="198" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="gm1-Jb-Aht">
+                                        <rect key="frame" x="820" y="68" width="64" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="UeY-x2-xdy">
+                                        <rect key="frame" x="20" y="169" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="EDv-QF-t1R">
+                                        <rect key="frame" x="420" y="169" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" id="mAb-Qy-3zY">
+                                        <rect key="frame" x="920" y="20" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Skm-8z-x8g">
+                                        <rect key="frame" x="720" y="68" width="64" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="qE9-rB-663">
+                                        <rect key="frame" x="620" y="140" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="Juk-K3-HnV">
+                                        <rect key="frame" x="320" y="169" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" id="jcZ-AG-sao">
+                                        <rect key="frame" x="420" y="20" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" id="k4H-kH-pAf">
+                                        <rect key="frame" x="820" y="20" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" adjustsFontSizeToFit="NO" id="xsd-ik-Qdq">
+                                        <rect key="frame" x="220" y="198" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" adjustsFontSizeToFit="NO" id="mfD-F2-l4z">
+                                        <rect key="frame" x="920" y="198" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="xSH-YI-0Fw">
+                                        <rect key="frame" x="220" y="140" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="ttC-C7-N7Y">
+                                        <rect key="frame" x="320" y="140" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="W6M-yx-T4e">
+                                        <rect key="frame" x="220" y="68" width="64" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="Bxs-zM-G01">
+                                        <rect key="frame" x="520" y="140" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" adjustsFontSizeToFit="NO" id="ksg-XV-KNx">
+                                        <rect key="frame" x="120" y="198" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="YUJ-RD-S8V">
+                                        <rect key="frame" x="520" y="169" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="TTG-Lb-T4w">
+                                        <rect key="frame" x="920" y="140" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="j4z-lg-B5g">
+                                        <rect key="frame" x="620" y="68" width="64" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" id="Y4s-cA-DNb">
+                                        <rect key="frame" x="620" y="20" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="wTw-f2-z5L">
+                                        <rect key="frame" x="920" y="68" width="64" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="PBJ-9M-jbD">
+                                        <rect key="frame" x="920" y="169" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Vf6-jr-Rle">
+                                        <rect key="frame" x="20" y="68" width="64" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" adjustsFontSizeToFit="NO" id="62k-Qa-odt">
+                                        <rect key="frame" x="20" y="198" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="zPD-bf-MIm">
+                                        <rect key="frame" x="320" y="68" width="64" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" id="vY5-Ce-Lla">
+                                        <rect key="frame" x="320" y="20" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" adjustsFontSizeToFit="NO" id="d8h-YN-pNh">
+                                        <rect key="frame" x="820" y="198" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="NrZ-Zf-XzK">
+                                        <rect key="frame" x="220" y="169" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="oU8-xy-Spc">
+                                        <rect key="frame" x="20" y="140" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" id="oAD-5e-dFN">
+                                        <rect key="frame" x="720" y="20" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="hd8-27-ytN">
+                                        <rect key="frame" x="820" y="169" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" id="035-7h-o3e">
+                                        <rect key="frame" x="220" y="20" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" adjustsFontSizeToFit="NO" id="8gr-p5-JJu">
+                                        <rect key="frame" x="420" y="198" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" adjustsFontSizeToFit="NO" id="fZ1-QN-Zbk">
+                                        <rect key="frame" x="520" y="198" width="64" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="88k-om-We8">
+                                        <rect key="frame" x="120" y="169" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="pT5-tc-SON">
+                                        <rect key="frame" x="720" y="169" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="pxm-hX-5PG">
+                                        <rect key="frame" x="420" y="140" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="kMC-mS-irK">
+                                        <rect key="frame" x="620" y="169" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="r47-aI-gle">
+                                        <rect key="frame" x="820" y="140" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="dPe-xk-Sx4">
+                                        <rect key="frame" x="720" y="140" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" id="0Iq-ac-YdR">
+                                <rect key="frame" x="602" y="31" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="dCy-dL-WaK">
-                                <rect key="frame" x="177" y="290" width="420" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Влажность:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="tTa-06-2gB">
-                                <rect key="frame" x="72" y="390" width="97" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="RfT-1z-wP2">
-                                <rect key="frame" x="177" y="390" width="125" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ветер:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="JHy-bf-fqO">
-                                <rect key="frame" x="114" y="440" width="55" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="YXz-hZ-Lve">
-                                <rect key="frame" x="177" y="440" width="125" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Давление:" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="Igt-IH-7bF">
-                                <rect key="frame" x="83" y="490" width="87" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" lineBreakMode="tailTruncation" minimumFontSize="10" id="bIS-Po-gdT">
-                                <rect key="frame" x="178" y="490" width="159" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </activityIndicatorView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" scrollEnabled="NO" id="Oox-w6-VIl">
+                                <rect key="frame" x="601" y="154" width="388" height="289"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <connections>
+                            <action selector="backgroundTap:" destination="2" eventType="touchUpInside" id="oKA-b2-3rB"/>
+                        </connections>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="conditionsView" destination="s46-s9-hFI" id="gAA-cH-1pu"/>
+                        <outlet property="dateLabel" destination="BPl-FS-1gn" id="oIE-Xr-YK5"/>
+                        <outlet property="forecastView" destination="apy-CL-SVg" id="s6v-7o-7sB"/>
+                        <outlet property="geoButton" destination="Tvf-W5-5oK" id="zKT-Zb-Lv3"/>
                         <outlet property="goButton" destination="jml-9N-czF" id="3dE-Pe-KLf"/>
                         <outlet property="humidityLabel" destination="RfT-1z-wP2" id="Xug-cv-mzP"/>
+                        <outlet property="imageWeather" destination="m1G-v3-mA5" id="fPp-6Q-MHQ"/>
+                        <outlet property="indicator" destination="0Iq-ac-YdR" id="i1P-fn-Dvr"/>
                         <outlet property="latText" destination="Cmk-jc-ggk" id="uvF-Xg-rmn"/>
                         <outlet property="locationLabel" destination="0zD-n6-q0g" id="dg5-nh-8c7"/>
                         <outlet property="longText" destination="lep-JV-gFd" id="85Z-uY-qfc"/>
+                        <outlet property="mapView" destination="Oox-w6-VIl" id="IVv-MN-aPC"/>
                         <outlet property="pressureLabel" destination="bIS-Po-gdT" id="hQo-PE-uvD"/>
                         <outlet property="temperatureLabel" destination="nrd-Ux-6N4" id="lBL-D4-go7"/>
                         <outlet property="weatherLabel" destination="dCy-dL-WaK" id="o8M-ub-ldv"/>
                         <outlet property="windLabel" destination="YXz-hZ-Lve" id="dzW-hR-SHK"/>
+                        <outletCollection property="forecastWeatherImage" destination="DTg-w2-4T0" id="cEU-n3-qfA"/>
+                        <outletCollection property="forecastWeatherImage" destination="BuC-Hk-Tif" id="NHT-Me-gbK"/>
+                        <outletCollection property="forecastDay" destination="XAp-RT-fgS" id="UOk-W1-IlU"/>
+                        <outletCollection property="forecastDay" destination="nVl-9u-y9C" id="fdV-J6-1qp"/>
+                        <outletCollection property="forecastWind" destination="Wfo-sB-T8N" id="x2X-2A-Rfj"/>
+                        <outletCollection property="forecastTemp" destination="OVG-nF-DpS" id="cDQ-by-j1q"/>
+                        <outletCollection property="forecastWeatherImage" destination="hAI-94-dHu" id="PkN-34-xbb"/>
+                        <outletCollection property="forecastDay" destination="Mbt-oa-R8u" id="Zzg-qH-NUi"/>
+                        <outletCollection property="forecastWind" destination="yB1-eb-1es" id="6h9-d2-PZN"/>
+                        <outletCollection property="forecastWind" destination="H9B-rw-BfF" id="JhU-mc-PA3"/>
+                        <outletCollection property="forecastWeatherImage" destination="gm1-Jb-Aht" id="7H4-2C-D0b"/>
+                        <outletCollection property="forecastHumid" destination="UeY-x2-xdy" id="O2C-AL-RCL"/>
+                        <outletCollection property="forecastHumid" destination="EDv-QF-t1R" id="TZ4-ir-Cga"/>
+                        <outletCollection property="forecastDay" destination="mAb-Qy-3zY" id="WHk-gM-d8p"/>
+                        <outletCollection property="forecastWeatherImage" destination="Skm-8z-x8g" id="N0e-et-1Mf"/>
+                        <outletCollection property="forecastTemp" destination="qE9-rB-663" id="ZzI-vf-381"/>
+                        <outletCollection property="forecastHumid" destination="Juk-K3-HnV" id="4Tv-kf-7sy"/>
+                        <outletCollection property="forecastDay" destination="jcZ-AG-sao" id="bXp-en-Mw0"/>
+                        <outletCollection property="forecastDay" destination="k4H-kH-pAf" id="luz-WI-Xkc"/>
+                        <outletCollection property="forecastWind" destination="xsd-ik-Qdq" id="bkj-yk-nqG"/>
+                        <outletCollection property="forecastWind" destination="mfD-F2-l4z" id="ahR-bQ-WXJ"/>
+                        <outletCollection property="forecastTemp" destination="xSH-YI-0Fw" id="Wwk-Mr-JJF"/>
+                        <outletCollection property="forecastTemp" destination="ttC-C7-N7Y" id="zil-ZD-arj"/>
+                        <outletCollection property="forecastWeatherImage" destination="W6M-yx-T4e" id="Gg8-6m-SYo"/>
+                        <outletCollection property="forecastTemp" destination="Bxs-zM-G01" id="zSp-FB-2jf"/>
+                        <outletCollection property="forecastWind" destination="ksg-XV-KNx" id="Pqp-IL-dWq"/>
+                        <outletCollection property="forecastHumid" destination="YUJ-RD-S8V" id="nbw-VB-OHn"/>
+                        <outletCollection property="forecastTemp" destination="TTG-Lb-T4w" id="hFI-V4-OS1"/>
+                        <outletCollection property="forecastWeatherImage" destination="j4z-lg-B5g" id="72W-iv-8oc"/>
+                        <outletCollection property="forecastDay" destination="Y4s-cA-DNb" id="chX-UJ-pE7"/>
+                        <outletCollection property="forecastWeatherImage" destination="wTw-f2-z5L" id="mtn-kX-1vx"/>
+                        <outletCollection property="forecastHumid" destination="PBJ-9M-jbD" id="dhh-ZY-FdN"/>
+                        <outletCollection property="forecastWeatherImage" destination="Vf6-jr-Rle" id="Qe8-m0-aiy"/>
+                        <outletCollection property="forecastWind" destination="62k-Qa-odt" id="gfH-a4-dcA"/>
+                        <outletCollection property="forecastWeatherImage" destination="zPD-bf-MIm" id="n2A-dK-7er"/>
+                        <outletCollection property="forecastDay" destination="vY5-Ce-Lla" id="Kc9-kf-vQ5"/>
+                        <outletCollection property="forecastWind" destination="d8h-YN-pNh" id="x9j-SS-ScF"/>
+                        <outletCollection property="forecastHumid" destination="NrZ-Zf-XzK" id="ggK-Kd-pmB"/>
+                        <outletCollection property="forecastTemp" destination="oU8-xy-Spc" id="rH1-lM-Sby"/>
+                        <outletCollection property="forecastDay" destination="oAD-5e-dFN" id="EpU-J0-sXR"/>
+                        <outletCollection property="forecastHumid" destination="hd8-27-ytN" id="jcA-yY-2AX"/>
+                        <outletCollection property="forecastDay" destination="035-7h-o3e" id="QBC-dg-IAe"/>
+                        <outletCollection property="forecastWind" destination="8gr-p5-JJu" id="sY7-tx-lkG"/>
+                        <outletCollection property="forecastWind" destination="fZ1-QN-Zbk" id="SQH-Ci-qfs"/>
+                        <outletCollection property="forecastHumid" destination="88k-om-We8" id="dXy-Qk-8Iq"/>
+                        <outletCollection property="forecastHumid" destination="pT5-tc-SON" id="GJq-yi-FIX"/>
+                        <outletCollection property="forecastTemp" destination="pxm-hX-5PG" id="8rg-Gd-Zzz"/>
+                        <outletCollection property="forecastHumid" destination="kMC-mS-irK" id="O09-Uh-mcH"/>
+                        <outletCollection property="forecastTemp" destination="r47-aI-gle" id="dfd-Jp-LnL"/>
+                        <outletCollection property="forecastTemp" destination="dPe-xk-Sx4" id="nu2-no-SvK"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-258" y="-90"/>
+            <point key="canvasLocation" x="-482" y="142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="geolocation.png" width="48" height="48"/>
+    </resources>
     <classes>
         <class className="WIViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WIViewController.h"/>
             <relationships>
+                <relationship kind="action" name="backgroundTap:"/>
                 <relationship kind="action" name="buttonPressed:"/>
-                <relationship kind="action" name="modePressed:"/>
+                <relationship kind="action" name="geoPressed:"/>
+                <relationship kind="outlet" name="conditionsView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="forecastView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="geoButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="goButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="humidityLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageWeather" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="indicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="latText" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="locationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="longText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="modeButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
                 <relationship kind="outlet" name="pressureLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="temperatureLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="weatherLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="windLabel" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="forecastDay" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="forecastHumid" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="forecastTemp" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="forecastWeatherImage" candidateClass="UIImageView"/>
+                <relationship kind="outletCollection" name="forecastWind" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>
